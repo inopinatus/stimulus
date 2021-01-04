@@ -37,6 +37,7 @@ export class Action {
 const defaultEventNames: { [tagName: string]: (element: Element) => string } = {
   "a":        e => "click",
   "button":   e => "click",
+  "details":  e => "toggle",
   "form":     e => "submit",
   "input":    e => e.getAttribute("type") == "submit" ? "click" : "input",
   "select":   e => "change",
